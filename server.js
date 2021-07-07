@@ -14,7 +14,6 @@ const accessTokenSecret = 'secret123';
 
 app.get('/', (req, res) => {
   res.send('<h1>Hello Prasenjit Das</h1>')
-  res.sendStatus(201);
 });
 
 app.post('/login', (req, res) => {
@@ -60,4 +59,4 @@ app.get('/users',authenticateJWT,async (req, res) => {
 });
 app.listen(80);
 
-console.log('App running on localhost:3001');
+console.log('App running on localhost:80');
