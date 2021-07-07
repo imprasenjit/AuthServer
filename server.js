@@ -12,6 +12,10 @@ app.use(cors());
 
 const accessTokenSecret = 'secret123';
 
+app.get('/', (req, res) => {
+  res.send('<h1>Hello Prasenjit Das</h1>')
+  res.sendStatus(201);
+});
 
 app.post('/login', (req, res) => {
   const { username, password } = req.body;
