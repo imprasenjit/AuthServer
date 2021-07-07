@@ -57,6 +57,6 @@ app.get('/users',authenticateJWT,async (req, res) => {
   }
 
 });
-app.listen(80);
+app.listen(process.env.PORT);
 
 console.log('App running on localhost:80');
