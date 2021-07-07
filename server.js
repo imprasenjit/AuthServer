@@ -58,6 +58,6 @@ app.get('/users',authenticateJWT,async (req, res) => {
   }
 
 });
-app.listen(3001);
+app.listen(80);
 
 console.log('App running on localhost:3001');
